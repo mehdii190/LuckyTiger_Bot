@@ -12,7 +12,7 @@ async def AddUser(client:Client, message:Message):
     try:
             user = message.chat.id
             rep = message.reply_to_message.from_user.id
-            await db.add_user(user_id = rep, name = message.from_user.first_name)
+            await db.add_user(user_id = rep, name = message.reply_to_message.first_name)
             print("done !")
             await Client.send_message(client,user,text = "add shod")
     except Exception as e:
