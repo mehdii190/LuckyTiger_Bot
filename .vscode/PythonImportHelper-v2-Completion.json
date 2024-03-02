@@ -1,0 +1,298 @@
+[
+    {
+        "label": "pymongo",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "pyrogram",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pyrogram",
+        "description": "pyrogram",
+        "detail": "pyrogram",
+        "documentation": {}
+    },
+    {
+        "label": "Client",
+        "importPath": "pyrogram",
+        "description": "pyrogram",
+        "isExtraImport": true,
+        "detail": "pyrogram",
+        "documentation": {}
+    },
+    {
+        "label": "filters",
+        "importPath": "pyrogram",
+        "description": "pyrogram",
+        "isExtraImport": true,
+        "detail": "pyrogram",
+        "documentation": {}
+    },
+    {
+        "label": "Client",
+        "importPath": "pyrogram",
+        "description": "pyrogram",
+        "isExtraImport": true,
+        "detail": "pyrogram",
+        "documentation": {}
+    },
+    {
+        "label": "filters",
+        "importPath": "pyrogram",
+        "description": "pyrogram",
+        "isExtraImport": true,
+        "detail": "pyrogram",
+        "documentation": {}
+    },
+    {
+        "label": "filters",
+        "importPath": "pyrogram",
+        "description": "pyrogram",
+        "isExtraImport": true,
+        "detail": "pyrogram",
+        "documentation": {}
+    },
+    {
+        "label": "Client",
+        "importPath": "pyrogram",
+        "description": "pyrogram",
+        "isExtraImport": true,
+        "detail": "pyrogram",
+        "documentation": {}
+    },
+    {
+        "label": "Client",
+        "importPath": "pyrogram",
+        "description": "pyrogram",
+        "isExtraImport": true,
+        "detail": "pyrogram",
+        "documentation": {}
+    },
+    {
+        "label": "Message",
+        "importPath": "pyrogram.types",
+        "description": "pyrogram.types",
+        "isExtraImport": true,
+        "detail": "pyrogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "Message",
+        "importPath": "pyrogram.types",
+        "description": "pyrogram.types",
+        "isExtraImport": true,
+        "detail": "pyrogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "Message",
+        "importPath": "pyrogram.types",
+        "description": "pyrogram.types",
+        "isExtraImport": true,
+        "detail": "pyrogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "environ",
+        "importPath": "os",
+        "description": "os",
+        "isExtraImport": true,
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "con",
+        "kind": 5,
+        "importPath": "database.db",
+        "description": "database.db",
+        "peekOfCode": "con = pymongo.MongoClient(DATABASE_URL)\nmydb = con[\"MyTel_forward\"]\nmycol = mydb[\"Users\"]\n#mycol2 = mydb[\"Admin\"]\nasync def add_user(user_id:int, name:str) -> None:\n    user = mycol.find_one(\n        {\"user_id\":user_id}\n    )\n    if user is None:\n        my_dict = {\"user_id\":user_id, \"name\":name}",
+        "detail": "database.db",
+        "documentation": {}
+    },
+    {
+        "label": "mydb",
+        "kind": 5,
+        "importPath": "database.db",
+        "description": "database.db",
+        "peekOfCode": "mydb = con[\"MyTel_forward\"]\nmycol = mydb[\"Users\"]\n#mycol2 = mydb[\"Admin\"]\nasync def add_user(user_id:int, name:str) -> None:\n    user = mycol.find_one(\n        {\"user_id\":user_id}\n    )\n    if user is None:\n        my_dict = {\"user_id\":user_id, \"name\":name}\n        mycol.insert_one(my_dict)",
+        "detail": "database.db",
+        "documentation": {}
+    },
+    {
+        "label": "mycol",
+        "kind": 5,
+        "importPath": "database.db",
+        "description": "database.db",
+        "peekOfCode": "mycol = mydb[\"Users\"]\n#mycol2 = mydb[\"Admin\"]\nasync def add_user(user_id:int, name:str) -> None:\n    user = mycol.find_one(\n        {\"user_id\":user_id}\n    )\n    if user is None:\n        my_dict = {\"user_id\":user_id, \"name\":name}\n        mycol.insert_one(my_dict)\n    else:",
+        "detail": "database.db",
+        "documentation": {}
+    },
+    {
+        "label": "#mycol2",
+        "kind": 5,
+        "importPath": "database.db",
+        "description": "database.db",
+        "peekOfCode": "#mycol2 = mydb[\"Admin\"]\nasync def add_user(user_id:int, name:str) -> None:\n    user = mycol.find_one(\n        {\"user_id\":user_id}\n    )\n    if user is None:\n        my_dict = {\"user_id\":user_id, \"name\":name}\n        mycol.insert_one(my_dict)\n    else:\n        return False",
+        "detail": "database.db",
+        "documentation": {}
+    },
+    {
+        "label": "#ww",
+        "kind": 5,
+        "importPath": "database.db",
+        "description": "database.db",
+        "peekOfCode": "#ww = []\n#for i in mycol.find():\n#    dd = i\n#    ww.append(i)\n#print(dd[\"user_id\"])\n#print(ww)",
+        "detail": "database.db",
+        "documentation": {}
+    },
+    {
+        "label": "auth",
+        "kind": 5,
+        "importPath": "plugins.forward",
+        "description": "plugins.forward",
+        "peekOfCode": "auth = []\nfor i in db.mycol.find():\n    auth.append(i[\"user_id\"])\n@Client.on_message(filters.group & filters.text & filters.user(auth) , group=0)\nasync def forward_to_channel(client:Client, message:Message):\n    try:\n        if message.text == \"for\":\n            print(\"ok2\")\n            rep = message.reply_to_message.id\n            await Client.forward_messages(client, chat_id = Channel, from_chat_id = message.chat.id, message_ids = rep)",
+        "detail": "plugins.forward",
+        "documentation": {}
+    },
+    {
+        "label": "Bot",
+        "kind": 6,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "class Bot(Client):\n    def __init__(self):\n        super().__init__(\n            name = \"MyLuckyTiger-Bot\",\n            api_id = API_ID,\n            api_hash = API_HASH,\n            bot_token = BOT_TOKEN,\n            plugins = {\"root\" : \"plugins\"}\n        )\nBot().run()",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "API_ID",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "API_ID = environ.get(\"API_ID\",\"\")\nAPI_HASH = environ.get(\"API_HASH\",\"\")\nBOT_TOKEN = environ.get(\"BOT_TOKEN\",\"\")\n# AdminS\nADMIN = 339338222\n# MongoDB information\nDATABASE_URL = environ.get('DATABASE_URL', \"\")\n# CHannel\nChannel = environ.get(\"Channel_id\",\"\")",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "API_HASH",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "API_HASH = environ.get(\"API_HASH\",\"\")\nBOT_TOKEN = environ.get(\"BOT_TOKEN\",\"\")\n# AdminS\nADMIN = 339338222\n# MongoDB information\nDATABASE_URL = environ.get('DATABASE_URL', \"\")\n# CHannel\nChannel = environ.get(\"Channel_id\",\"\")",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "BOT_TOKEN",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "BOT_TOKEN = environ.get(\"BOT_TOKEN\",\"\")\n# AdminS\nADMIN = 339338222\n# MongoDB information\nDATABASE_URL = environ.get('DATABASE_URL', \"\")\n# CHannel\nChannel = environ.get(\"Channel_id\",\"\")",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "ADMIN",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "ADMIN = 339338222\n# MongoDB information\nDATABASE_URL = environ.get('DATABASE_URL', \"\")\n# CHannel\nChannel = environ.get(\"Channel_id\",\"\")",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_URL",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "DATABASE_URL = environ.get('DATABASE_URL', \"\")\n# CHannel\nChannel = environ.get(\"Channel_id\",\"\")",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "Channel",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "Channel = environ.get(\"Channel_id\",\"\")",
+        "detail": "config",
+        "documentation": {}
+    }
+]
