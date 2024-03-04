@@ -1,4 +1,8 @@
-# Lucky Tiger 
+
+
+<h1 align="center"> 
+    ✨ Lucky Tiger  ✨ 
+</h1>
 
 <p align="center">
     <img src="https://wallpapers.com/images/high/dragon-ball-goku-ultra-instinct-1rxiloa6jbwui6v0.webp">
@@ -8,6 +12,16 @@
 
 <p align="center">
     <b>LuckyTiger Bot</b>
+</p>
+
+
+<p align="center">
+    <a href="https://python.org">
+        <img src="http://forthebadge.com/images/badges/made-with-python.svg" alt="made-with-python">
+    </a>
+    <a href="https://github.com/mehdii190">
+        <img src="http://ForTheBadge.com/images/badges/built-with-love.svg" alt="built-with-love">
+    </a> 
 </p>
 
 
