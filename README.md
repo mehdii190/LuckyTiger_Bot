@@ -126,4 +126,4 @@ Channel = environ.get("Channel_id","") ## you should go to https://t.me/myidbot 
 *  [Dan](https://t.me/haskell) for his [Pyrogram Library](https://github.com/pyrogram/pyrogram)
 
 ---
-<p align="center">Made with love from the Maldives ❤</p>
+<p align="center">Made with love from the Mehdi ❤</p>
